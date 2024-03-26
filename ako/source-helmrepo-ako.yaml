@@ -1,0 +1,10 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: ako-helm
+  namespace: default
+spec:
+  interval: 1m0s
+  url: https://avinetworks.github.io/avi-helm-charts/charts/stable/ako
+
